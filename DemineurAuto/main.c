@@ -1,3 +1,5 @@
+//Partie automatique joué aléatoirement
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h> 

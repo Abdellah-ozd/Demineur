@@ -12,7 +12,7 @@ typedef struct {
 	Etat etat;
 } Cellule;
 
-enum { TAILLE = 10 };
+enum { TAILLE = 10, NB_BOMBES = 20 };
 typedef Cellule Partie[TAILLE][TAILLE];
 
 
@@ -132,7 +132,7 @@ void demasquer(Partie p, int r, int c) {
 int main() {
 	srand((unsigned int)time(NULL));
 	Partie p;
-	init(p, 20);
+	init(p, NB_BOMBES);
 	afficher(p);
 	while (statut(p) == EN_COURS) {
 		int r = rand() % TAILLE;
